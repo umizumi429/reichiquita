@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoologico</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #59a0e2;
+            color: #a17cf8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 52px;
+            font-weight: 700;
+            margin-top: 40px;
+            color: #f7f7f7;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #895cf1
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 60px;
+        }
+
+        /* Bloque visual principal */
+        .hero-section {
+            background-color: #0885fa;
+            color: rgb(231, 229, 229);
+            padding: 60px 30px;
+            border-radius: 15px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 20px rgb(0, 0, 0);
+        }
+
+        .hero-section h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero-section .button-link {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #7d50f8;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: 600;
+        }
+
+        .hero-section .button-link:hover {
+            background-color: #ffd1d1;
+            transform: translateY(-3px);
+        }
+
+        /* Sección con tarjetas */
+        .card-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            flex-basis: calc(33.333% - 20px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #e266e2;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #000000;
+        }
+
+        /* Caja de información */
+        .info-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 1000px;
+            width: 100%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .info-section h3 {
+            font-size: 28px;
+            color: #e266e2;
+            margin-bottom: 20px;
+        }
+
+        .info-section p {
+            font-size: 18px;
+            color: #000000;
+        }
+
+        /* Adaptación responsiva */
+        @media (max-width: 768px) {
+            .card {
+                flex-basis: calc(50% - 20px);
+            }
+
+            .hero-section h2 {
+                font-size: 32px;
+            }
+
+            .hero-section p {
+                font-size: 18px;
+            }
+
+            .hero-section .button-link {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .card {
+                flex-basis: 100%;
+            }
+
+            .hero-section h2 {
+                font-size: 28px;
+            }
+
+            .hero-section p {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Título del proyecto -->
+    <h1>zoologico</h1>
+
+    <!-- Sección visual principal (Hero) -->
+    <div class="main-container">
+        <div class="hero-section">
+            <h2>proposito del proyecto</h2>
+            <p>Ejecucion del fortalecimiento del compromiso ambiental de cada persona, a traves del conocimiento del papel de los zoologicos en la conservacion.</p>
+            <a href="https://zooguadalajara.com.mx/" class="button-link">Aprende mas sobre el zoologico</a>
+        </div>
+    </div>
+
+    <!-- Sección de tarjetas informativas -->
+    <div class="card-section">
+        <div class="card">
+            <h3>Introduccion al proyecto</h3>
+            <p>¿Quieres que tus alumnos aprendan y cuiden la flora y fauna del planeta? Una de las formas de hacerlo es visitando el zoologico.Esta es una aventura llena de diversio y descubrimiento para cualquier alumno. </p>
+        </div>
+        <div class="card">
+            <h3>Intoduccion 2</h3>
+            <p>desde la educacion ambiental hasta la estimulacion de la estimulacion de la empatia hacia los seres vivos, los beneficios son variados.</p>
+        </div>
+        <div class="card">
+            <h3>Matarias Involucradas</h3>
+            <p>lengua y comunicacion III, lengua y comunicacion I, Pensamiento matematico I, calculo diferencial, .</p>
+        </div>
+    </div>
+
+    <!-- Sección de información adicional -->
+    <div class="info-section">
+        <h3>¿Por qué es importante?</h3>
+        <p>Es importante para mejorar la calidad de vida de los animales y sobre todo mejorar las intalaciones para una mejor comodidad en el habita de los animales.  .</p>
+    </div>
+
+</body>
+</html>
